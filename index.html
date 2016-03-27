@@ -2,22 +2,48 @@
 layout: default
 ---
 
-<div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+<!-- Main page -->
+<section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	<!-- What we have -->
+	<div id="rst-home-whatwehave" class="wpb_row">
+		<div class="container">
+			<div class="rst-group-title text-center less-padding">
+				<h3>Who We Are</h3>
+				<p>Kaizen is a consultancy based in the Washington DC Area.<br/>We bring a holistic and well-rounded approach to solving technology problems.</p>
+			</div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="rst-box-info">
+						<h4>Next Generation Tools and Techniques</h4>
+						<p>
+							We constantly observe trends in the technology industry and pick technologies
+							based on where the industry is headed, not just where the industry has been.
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+							We use tools like <strong>Ember.js</strong>, <strong>Ruby on Rails</strong>, <strong>Elixir</strong> and <strong>Docker</strong>
+							because they allow us to build web applications that feel native, rapidly prototype cloud architectures, and also scale easily.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="rst-box-info">
+						<h4>A Holistic Approach</h4>
+						<p>
+							The key to our approach is strong analysis of how each problem fits into a whole solution.
 
-</div>
+							Our clients benefit from our experience in helping make these kinds of decisions, and also helping justify those decisions to stakeholders. Clients have told us that the technology choices we made helped them
+							sell more, scale better, and impress their customers years after we delivered.
+						</p>
+					</div>
+				</div>
+			</div>
+		<div class="rst-scroll-down text-center">
+			<a href="#"><i class="fa fa-arrow-down"></i></a>
+		</div>
+	</div>
+	<!-- What we have -->
+
+</section>
+<!-- Main page -->
